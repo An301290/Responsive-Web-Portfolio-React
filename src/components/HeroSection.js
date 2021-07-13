@@ -1,45 +1,70 @@
 import React from "react";
 import { Button } from "./Button";
-import photo from "./Images/IMG_5415.JPG";
+import photo from "./Images/Angel.JPG";
 import "./styles/HeroSection.css";
 import "../App.css";
+import "../components/styles/Social_Icons_Photo.css";
+import video from "./Videos/Lines - 4760.mp4";
+import Portfolio from "./Pages/Portfolio";
+import Resume from "./Pages/Resume";
+import { Link } from "react-router-dom";
+import { AiFillGithub, AiFillBehanceCircle } from "react-icons/ai";
+import { TiSocialLinkedinCircular } from "react-icons/ti";
 
 function HeroSection() {
   return (
     <div className="hero-container">
-      {/* <video
-        type="video/mp4"
-        src="/src/components/Videos/Cave - 45340.mp4"
-        autoPlay
-        loop
-        muted
-      /> */}
+      <video type="video/mp4" src={video} autoPlay loop muted />
       <h1>
         Hi I'm <span>Angel</span>
       </h1>
-      <img src={photo} alt="Angel" className="photo" />
       <p>
-        <span>Web Developer</span> & <span>UX Designer</span> based in
-        Berlin, with a strong customer focus and deep
-        understanding of how to approach problems from a human-centered
-        perspective.
+        <span>Web Developer</span> & <span>UX Designer</span> based in Berlin,
+        with a strong customer focus and deep understanding of how to approach
+        problems from a human-centered perspective.
       </p>
-      <p></p>
-      <div className="hero-btns">
-        <Button
-          className="btns"
-          buttonStyle="btn--outline"
-          buttonSize="btn--large"
-        >
-          Portfolio
-        </Button>
-        <Button
-          className="btns"
-          buttonStyle="btn--primary"
-          buttonSize="btn--large"
-        >
-          Resume
-        </Button>
+      <br></br>
+      <br></br>
+      <div className="box">
+        <div className="picture">
+          <div className="imgBx">
+            <img src={photo} alt="Angel" classNameName="photo" />
+          </div>
+          <div className="details">
+            <h2>
+              Angel Samano Hamud<span>Web Developer & UX Designer</span>
+            </h2>
+            <ul className="social-icons">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/angel-samano-hamud/"
+                  target="_blank"
+                >
+                  <i>
+                    <AiFillGithub />
+                  </i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.behance.net/AngelSamUx" target="_blank">
+                  <i>
+                    <AiFillBehanceCircle />
+                  </i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/angel-samano-hamud/"
+                  target="_blank"
+                >
+                  <i>
+                    <TiSocialLinkedinCircular />
+                  </i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

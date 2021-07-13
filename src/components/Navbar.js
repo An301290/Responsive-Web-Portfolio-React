@@ -4,6 +4,7 @@ import logo from "../components/Images/Logo-Angel-Sam.png";
 import "./styles/Navbar.css";
 import { Button } from "./Button";
 
+
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -70,6 +71,7 @@ function Navbar() {
           {button && <Button buttonStyle="btn--outline">Contact</Button>}
         </div>
       </nav>
+    
     </>
   );
 }
