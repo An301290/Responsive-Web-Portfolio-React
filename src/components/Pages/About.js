@@ -8,13 +8,13 @@ import Resume from "./Resume";
 
 function About() {
   return (
-    <>
+    <div>
       <HeroSection />
       <Cards />
       <Resume />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 

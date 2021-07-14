@@ -1,0 +1,20 @@
+.container {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume_image {
+  @media only screen and (min-width: 1200px) {
+    width: 84%;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    display: flex;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 2rem;
+  }
+}

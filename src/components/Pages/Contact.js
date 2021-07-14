@@ -6,10 +6,10 @@ import Footer from "../Footer";
 
 function Contact() {
   return (
-    <>
+    <div className="contact">
       <ContactForm/>
       
-    </>
+    </div>
   );
 }
 

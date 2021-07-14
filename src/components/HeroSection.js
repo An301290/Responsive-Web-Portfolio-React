@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "./Button";
-import photo from "./Images/Angel.JPG";
+import photo from "./Images/photo_portfolio.JPG";
 import "./styles/HeroSection.css";
 import "../App.css";
 import "../components/styles/Social_Icons_Photo.css";
@@ -19,9 +19,10 @@ function HeroSection() {
         Hi I'm <span>Angel</span>
       </h1>
       <p>
-        <span>Web Developer</span> & <span>UX Designer</span> based in Berlin,
-        with a strong customer focus and deep understanding of how to approach
-        problems from a human-centered perspective.
+        <span>Full Stack Web Developer</span> with
+        <span> UX design backgroung</span> based in Berlin, with a strong
+        customer focus and deep understanding of how to approach problems from a
+        human-centered perspective.
       </p>
       <br></br>
       <br></br>
