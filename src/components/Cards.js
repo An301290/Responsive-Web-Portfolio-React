@@ -11,8 +11,7 @@ function Cards() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              href="https://www.behance.net/gallery/113687199/Tattoon-App"
-              target="_blank"
+              path="/portfolio"
               src={image1}
               label="Tattoon"
               text="Tattoo app"

@@ -1,3 +1,4 @@
+import { useHistory } from "react-router-dom";
 import React from "react";
 import "../../App.css";
 import CardItem from "../CardItem.js";
@@ -6,14 +7,23 @@ import image from "../Images/coding-924920_1280.jpg";
 import "../styles/Portfolio.css";
 import Footer from "../Footer";
 import video from "../Videos/Lines - 4760.mp4";
-
+import pdfSample from "./../../sample.pdf";
+import PdfFile from "./../PdfFile"
 function Portfolio() {
+  let history = useHistory();
+
+  function handleClick() {
+    history.push("/home");
+  }
+
   return (
     <div className="cards">
+        <PdfFile pdf={pdfSample} />
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
+              onClick={handleClick}
               path="/portfolio"
               src={image}
               target="_blank"

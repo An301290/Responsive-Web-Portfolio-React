@@ -5,7 +5,7 @@ import About from "./components/Pages/About.js";
 import Portfolio from "./components/Pages/Portfolio";
 import Resume from "./components/Pages/Resume";
 import Contact from "./components/Pages/Contact";
-
+import Portfolio_compressed from "./sample.pdf";
 function App() {
   return (
     <div className="App">

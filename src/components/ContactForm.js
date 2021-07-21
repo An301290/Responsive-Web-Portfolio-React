@@ -22,23 +22,19 @@ function ContactForm() {
   return (
     <>
       <div className="form-container">
-        <div className="label-container">
+        <form onSubmit={sendEmail} className="form">
           <h1>Contact Me</h1>
+          <br></br>
           <div className="input-container">
-            <form onSubmit={sendEmail}>
-              <br></br>
-              <label>Name</label>
-              <input type="text" name="name"></input>
-              <br></br>
-              <label>Email</label>
-              <input type="email" name="user_email"></input>
-              <br></br>
-              <label>Message</label>
-              <textarea name="message" rows="5"></textarea>
-              <input type="submit" value="send"></input>
-            </form>
+            <h2>Name</h2>
+            <input type="text" name="name"></input>
+            <h2>Email</h2>
+            <input type="email" name="user_email"></input>
+            <h2>Message</h2>
+            <textarea name="message" rows="5"></textarea>
+            <input type="submit" value="send"></input>
           </div>
-        </div>
+        </form>
       </div>
     </>
   );

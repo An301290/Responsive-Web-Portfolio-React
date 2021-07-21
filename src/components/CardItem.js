@@ -9,8 +9,7 @@ const CardItem = (props) => {
       <li className="cards__item">
         <Link
           rel="stylesheet"
-          href="https://www.behance.net/gallery/113687199/Tattoon-App"
-          target="_blank"
+          href=""
           className="cards__item__link"
           to={props.path}
         >
