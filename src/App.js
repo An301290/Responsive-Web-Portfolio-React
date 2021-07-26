@@ -6,11 +6,13 @@ import Portfolio from "./components/Pages/Portfolio";
 import Resume from "./components/Pages/Resume";
 import Contact from "./components/Pages/Contact";
 import Portfolio_compressed from "./sample.pdf";
+
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
+
         <Switch>
           <Route path="/" exact component={About} />
           <Route path="/portfolio" component={Portfolio} />

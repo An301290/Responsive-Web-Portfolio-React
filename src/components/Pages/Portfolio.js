@@ -8,7 +8,8 @@ import "../styles/Portfolio.css";
 import Footer from "../Footer";
 import video from "../Videos/Lines - 4760.mp4";
 import pdfSample from "./../../sample.pdf";
-import PdfFile from "./../PdfFile"
+import PdfFile from "./../PdfFile";
+
 function Portfolio() {
   let history = useHistory();
 
@@ -18,7 +19,7 @@ function Portfolio() {
 
   return (
     <div className="cards">
-        <PdfFile pdf={pdfSample} />
+        {/* <PdfFile pdf={pdfSample} /> */}
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">

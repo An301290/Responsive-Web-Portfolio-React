@@ -8,7 +8,6 @@ function Contact() {
   return (
     <div className="contact">
       <ContactForm/>
-      
     </div>
   );
 }

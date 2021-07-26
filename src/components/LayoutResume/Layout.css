@@ -1,0 +1,20 @@
+.main_container {
+  display: flex;
+}
+.left_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: red;
+  width: 30%;
+  height: 100vh;
+}
+
+.right_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: blue;
+  width: 70%;
+  height: 100vh;
+}

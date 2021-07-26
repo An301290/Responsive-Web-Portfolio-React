@@ -1,7 +1,6 @@
 import React from "react";
 import CardItem from "./CardItem";
 import "./styles/Cards.css";
-import image from "./Images/coding-924920_1280.jpg";
 import image1 from "./Images/coffee-2737047_1280.jpg";
 
 function Cards() {
